@@ -20,11 +20,11 @@ Returns data.frame
 ####DescriptiveNaming()
 Renames columns with non-descriptive names. Activity column's 
 numeric rows are replaced with character equivalents. 
-1. 1 WALKING
-2. 2 WALKING_UPSTAIRS
-3. 3 WALKING_DOWNSTAIRS
-4. 4 SITTING
-5. 5 STANDING
+* 1 WALKING
+* 2 WALKING_UPSTAIRS
+* 3 WALKING_DOWNSTAIRS
+* 4 SITTING
+* 5 STANDING
 6. 6 LAYING
 ####tidyData()
 Returns a data.frame with Averages of every measurement grouped by subject and activity, the tidy data.
@@ -36,9 +36,9 @@ dplyr package is required to run this script
 ###How to Run Script()
 Download and extract dataset
 Load script using source function
->>source("run_analysis.R")
+```>source("run_analysis.R")```
 Navigate to dataset directory and execute function run_analysis
->>run_analysis()
+```>run_analysis()```
 or
 Pass run_analysis the location of the extracted dataset
 >run_analysis("/extracted_dataset_directory")
