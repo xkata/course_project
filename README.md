@@ -5,19 +5,19 @@
 ##How To Run Script
  
 The run_analysis script is composed of 5 functions. Each of these functions
-play role extracting and eventually returning a tidy dataset.
+play role in extracting and eventually returning a tidy dataset.
 ###Functions
-####mergeData
+####mergeData()
 Merges Test and Training Data and returns a data frame
 The data frame will have all columns labelled as well
 
-####filterData
+####filterData()
 Filters out, measurements that are not required in the Tidy dataset. 
 Only Standard Deviation and Mean measurements are preserve, 
 other measurements are discarded. 
 Returns data.frame
 
-####DescriptiveNaming
+####DescriptiveNaming()
 Renames columns with non-descriptive names. Activity column's 
 numeric rows are replaced with character equivalents. 
 1 WALKING
@@ -26,14 +26,14 @@ numeric rows are replaced with character equivalents.
 4 SITTING
 5 STANDING
 6 LAYING
-####tidyData 
+####tidyData()
 Returns a data.frame with Averages of every measurement grouped by subject and activity, the tidy data.
 It also write the result to the current working directory
-####run_analysis 
+####run_analysis()
 This is the entry point to the script, it will call every other function in sequence to return a tidy data.frame
-###Required Packages
+###Required Packages()
 dplyr package is required to run this script
-###How to Run Script
+###How to Run Script()
 Download and extract dataset
 Load script using source function
 >source("run_analysis.R")
