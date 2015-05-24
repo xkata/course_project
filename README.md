@@ -34,9 +34,9 @@ Returns a data.frame with Averages of every measurement grouped by subject and a
 It also write the result to the current working directory
 ####run_analysis()
 This is the entry point to the script, it will call every other function in sequence to return a tidy data.frame
-###Required Packages()
+###Required Packages
 dplyr package is required to run this script
-###How to Run Script()
+###How to Run Script
 Download and extract dataset
 Load script using source function
 ```
