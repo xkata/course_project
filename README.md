@@ -26,6 +26,9 @@ numeric rows are replaced with character equivalents.
 * 4 SITTING
 * 5 STANDING
 * 6 LAYING
+
+
+
 ####tidyData()
 Returns a data.frame with Averages of every measurement grouped by subject and activity, the tidy data.
 It also write the result to the current working directory
