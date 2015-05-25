@@ -1,4 +1,3 @@
-#codeBook
 This data in this tidy data set is source from Human Activity Recognition Using Smartphones Data Set.
 Read more on the url: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 The data set url: http://archive.ics.uci.edu/ml/machine-learning-databases/00240/UCI%20HAR%20Dataset.zip
@@ -30,3 +29,24 @@ X_train.txt,Y_train.txt and subject_train.txt. These two data sets are merged ro
 columns. Y_test & Y_train will contain the column with the activity carried out by volunteer, this is labelled as activity.
 subject_test.txt & subject_train contain the column with the subject number.
 X_test.txt & X_train.txt contain 561 columns, each derivatived by applying a function(mean, standard deviation, max, min etc)
+activity_labels.txt contains values numeric to character mapping for Y_test.txt & X_train.txt
+
+features.txt contains a column of 561 rows, these are labels for the column in X_train.txt & X_test.txt.
+
+###Step 1
+The first step is the script is merge & label the columns of the data in the text file above. The result is a table with 563 columns, the first two 
+being subject & activity, the rest are measurements obtain after applying a function.
+
+###Step 2 
+This step extracts only mean and standard deviation of the columns from step 1. The table has 81 columns.
+
+###Step 3
+Rename columns with non-descriptive names and replace activity's column numeric values with matching character representation
+
+###Step 4
+Group data by column & activity, and for each pair calculate the average of each measurement. Return the a tidy data set with these results
+
+###Data Definition of Tidy data Set
+
+1	subject : Volunteer wearing Smartphone
+2	Activity : Activity Carried out by volunteer
