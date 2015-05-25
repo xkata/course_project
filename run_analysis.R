@@ -36,6 +36,7 @@ DescriptiveNaming <-function(filtered_data_set)
   column_names <- colnames(filtered_data_set)
   column_names<-gsub("f","FreqOf",column_names)
   column_names<-gsub("tB","TimeOfB",column_names)
+  column_names<-gsub("tG","TimeOfG",column_names)
   column_names<-gsub("Mag","Magnitude",column_names)
   colnames(filtered_data_set)<-column_names
   #rename activities from numeric values to character/string eqivalents
