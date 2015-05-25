@@ -48,5 +48,5 @@ Group data by column & activity, and for each pair calculate the average of each
 
 ###Data Definition of Tidy data Set
 
-1	subject : Volunteer wearing Smartphone
-2	Activity : Activity Carried out by volunteer
+1.	subject : Volunteer wearing Smartphone
+2.	Activity : Activity Carried out by volunteer
